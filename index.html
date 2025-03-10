@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea41f3f5ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ----------------------header------------------------ -->
+    <div id="heder">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/bg.png" alt=""> logo -->
+                <ul id="sidemanu">
+                    <li><a href="#heder">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">my work</a></li>
+                    <li><a href="#contect">contect</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>web devloper</p>
+                <h1>Hi,I'm <span>Akshay</span><br> parekh form gujarat </h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="no picture" >
+                </div>
+                    
+                <div class="about-col-2">
+                    <h1 class="sub-title">about me</h1>
+                    <p>Hi, I'm Parekh Akshay, a passionate Computer Science Engineering (CSE) student and an aspiring Web Developer. As a fresher in the field, I am eager to explore the world of full-stack development, building dynamic and user-friendly web applications. I have hands-on experience with HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB, and I’m always excited to learn new technologies and frameworks.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>Web devlopment</span><br>deploying defrent web/app</li>
+                            <li><span>ui/ux</span><br>design web/app interface</li>
+                            <li><span>app devlopment</span><br>deploying defrent app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>Job 1</span><br>Experience details 1</li>
+                            <li><span>Job 3</span><br>Experience details 3</li>
+                            <li><span>Job 2</span><br>Experience details 2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>10th 2020</span><br>BARODA HIGH SCHOOL, Vadodara - GSEB | Percentage: 75.16 / 100</li>
+                            <li><span>12th 2022</span><br> PHOENIX SCHOOL, Vadodara - GSEB | Percentage: 67.53 / 100</li>
+                            <li><span>Btech</span><br> Parul University - B.Tech. - CSE - PIT | CGPA: 7.10 / 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="srevices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web devlopment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam qui ab quisquam rerum ipsa voluptatum quaerat amet error, quos consequuntur beatae consequatur fugiat quidem, distinctio voluptatibus velit in quia! Obcaecati itaque autem cum sint eligendi recusandae, nemo consequatur ullam nam, cumque harum dolores, aliquam soluta corporis! Alias, adipisci dolor!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam qui ab quisquam rerum ipsa voluptatum quaerat amet error, quos consequuntur beatae consequatur fugiat quidem, distinctio voluptatibus velit in quia! Obcaecati itaque autem cum sint eligendi recusandae, nemo consequatur ullam nam, cumque harum dolores, aliquam soluta corporis! Alias, adipisci dolor!</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>app Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ipsam qui ab quisquam rerum ipsa voluptatum quaerat amet error, quos consequuntur beatae consequatur fugiat quidem, distinctio voluptatibus velit in quia! Obcaecati itaque autem cum sint eligendi recusandae, nemo consequatur ullam nam, cumque harum dolores, aliquam soluta corporis! Alias, adipisci dolor!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------my work----------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/about.png" >
+                    <div class="layer">
+                        <h3>Tour travel app</h3>
+                        <p>Explore, plan, and book your perfect journey with ease using our all-in-one tour and travel app.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/about.png" >
+                    <div class="layer">
+                        <h3>online driver hiring and services</h3>
+                        <p>Book reliable drivers and seamless ride services anytime with our online driver hiring platform.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/about.png" >
+                    <div class="layer">
+                        <h3>book shoping app</h3>
+                        <p>Discover, shop, and enjoy your favorite books anytime with our seamless book shopping app.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+     </div>
+     <!-- ----------------contact--------- -->
+      <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contect-left">
+                    <h1 class="sub-title">Contect Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contect@mail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>32435425355</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/impq.pdf.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contect-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="example1234@gmail.com" required>
+                        <textarea name="Massage" rows="6" placeholder="Your massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Crafting solutions with code & creativity.,<i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
